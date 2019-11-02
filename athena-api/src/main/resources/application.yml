@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: athena-api
+  boot:
+    admin:
+      client:
+        url: http://localhost:8765
+        username: admin
+        password: admin
+#对外爆漏监控断点
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always

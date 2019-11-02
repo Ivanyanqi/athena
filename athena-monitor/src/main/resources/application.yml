@@ -1,0 +1,9 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: athena-monitor
+  security:
+    user:
+      name: admin
+      password: admin
