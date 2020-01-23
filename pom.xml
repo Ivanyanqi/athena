@@ -37,6 +37,29 @@
         </dependency>
     </dependencies>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${admin.client.version}</version>
+            </dependency>
+            <!-- spring boot 监控    admin-server    -->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server</artifactId>
+                <version>${admin.server.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-ui</artifactId>
+                <version>${admin.server.version}</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
     <repositories>
         <repository>
             <id>spring-milestone</id>
